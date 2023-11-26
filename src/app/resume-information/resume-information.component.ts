@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-resume-information',
@@ -8,6 +9,8 @@ import { Component, Input } from '@angular/core';
 export class ResumeInformationComponent {
 
   @Input() showDiv: boolean = false; // Parent to Child
+
+  constructor(private router: Router) {}
 
   openCroemTab(){
     const urlToOpen = 'https://croeminc.com/';
@@ -29,6 +32,12 @@ export class ResumeInformationComponent {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    // window.open(pdfPath, '_blank');
+  }
+
+  goToAnotherComponent()
+  {
+    this.router.navigate(['/projects']);
   }
 
 }

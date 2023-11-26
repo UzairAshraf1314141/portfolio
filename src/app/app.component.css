@@ -1,6 +1,7 @@
 body {
     background-color: #15202B;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -8,64 +9,4 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-@media screen and (max-width: 1000px) {
-    body {
-        overflow: auto;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    .static-column{
-        height: 50vh !important;
-    }
-  }
-
-span {
-    color: #FFFFFF !important;
-}
-
-.container {
-    display: flex;
-}
-
-.header {
-    width: 100%;
-    overflow: hidden;
-}
-
-.scrolling-text {
-    white-space: nowrap;
-    display: inline-block;
-    animation: scrollText 10s linear infinite;
-}
-
-@keyframes scrollText {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.static-column {
-    position: static;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.scrollable-column {
-    background-color: #317773;
-    overflow-y: auto;
-    height: 100vh;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }

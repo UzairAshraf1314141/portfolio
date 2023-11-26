@@ -5,12 +5,26 @@
   }
   
   .underline-on-hover:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
+    color: gold !important;
   }
 
   .pad-40{
     padding: 40px;
   }
+
+  .experienceSection{
+    padding: 40px;
+  }
+
+  @media screen and (max-width: 650px) {
+    .experienceSection{
+      padding: 40px 20px !important;
+    }
+    .pad-40{
+      padding: 40px 20px !important;
+    }
+}
 
   .boxShadow:hover {
     box-shadow: 0 0 15px #33E3FF; 

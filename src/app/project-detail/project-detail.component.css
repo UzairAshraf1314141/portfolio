@@ -1,0 +1,69 @@
+h4, h3, h2, h1, span{
+    color: white;
+}
+
+.projectsComponent{
+    overflow: auto !important;
+}
+
+.projectHeading{
+    margin: 80px 0px;
+}
+
+.projectHeading:hover{
+    text-decoration: underline;
+    color: gold;
+}
+
+.techStackCol{
+    padding: 0px 35px;
+}
+
+.project-details-row{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 25px 0px;
+}
+
+.techStackBox{
+    background-color: red;
+    border-radius: 40px;
+    padding: 15px 15px;
+    margin: 5px 5px;
+    width: 150px;
+    height: 70px;
+    line-height: 12px;
+    text-align: center;
+    background-color: #2DD4BF1A;
+}
+
+.extraPadding{
+    padding: 26px 15px !important;
+}
+
+.techStackContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.techStackText{
+    font-size: .75rem;
+    color: #5EEAD4;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .projectHeading{
+        text-align: center;
+        color: gold !important;
+    }
+    .projects-headings{
+        display: none !important;
+    }
+    .techStackDetails{
+        display: none !important;
+    }
+    .techStackCol{
+        display: none !important;
+    }
+}

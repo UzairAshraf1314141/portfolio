@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { HomeScreenComponent } from './home-screen/home-screen.component';
+import { BioDetailsComponent } from './bio-details/bio-details.component';
 import { ResumeInformationComponent } from './resume-information/resume-information.component';
+import { FirstScreenComponent } from './first-screen/first-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeScreenComponent,
-    ResumeInformationComponent
+    BioDetailsComponent,
+    ResumeInformationComponent,
+    FirstScreenComponent
   ],
   imports: [
     BrowserModule,
