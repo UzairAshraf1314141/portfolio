@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FirstScreenComponent } from './first-screen/first-screen.component';
+import { BioDetailsComponent } from './bio-details/bio-details.component'
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 const routes: Routes = [
@@ -9,11 +10,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-
 
 
 }
